@@ -28,5 +28,31 @@ Selanjutnya edit beberapa konfigurasi dibawah ini:
   ```sh
   network.host: 10.10.6.10
   ```
-- **cluster.name** -
+- **cluster.name** - Atur nama cluster untuk elasticsearch. Jika terdapat node lain maka harus dalam cluster yang sama. Karena saat ini hanya menggunakan single node maka tidak berpengaruh.
+  ```sh
+  cluster.name: elasticsearch
+  ```
+- **node.name** - Atur nama untuk node dari elasticseaerch untuk menjadi identitas node dalam cluster.
+  ```sh
+  node.name: pod06-elk
+- **discovery.type** - Karena hanya menggunakan single node maka pengaturan discovery yang digunakan adalah single node.
+   ```sh
+   discovery.type: single-node
+   ```
+
+Setelah semua selesai dikonfigurasi. Simpan konfigurasi tersebut dan jalankan service dari elasticsearch.
+```sh
+$ sudo systemctl enable elasticsearch
+$ sudo systemctl start elasticsearch
+```
+Verifikasi service elasticsearch bahwa telah berjalan
+```sh
+$ sudo systemctl status -l elasticsearch
+```
+
+Setelah elasticsearch running, verifikasi bahwa konfigurasi yang telah dilakukan telah sesuai dengan perintah berikut.
+
+```sh
+$ curl -X GET 'http://10.10.6.10:9200/?pretty'
+```
 ![Verifikasi](/capture/verifikasi-instalasi-elasticsearch.png)
