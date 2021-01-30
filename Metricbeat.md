@@ -49,11 +49,14 @@ Setelah mengubah field **system.uptime.duration** selanjutnya pergi ke menu **Vi
 ![create-new-visualization](/capture/create-new-visualization.png)
 
 Setelah itu pilih tipe bentuk visualisasi. Untuk system uptime maka pilih bentuk **Metric** dan pilih sumber data dari **metricbeat**.
+
 ![select-metric-visualization](/capture/select-metric-visualization.png)
 ![select-metric-visualization](/capture/select-metric-source.png)
 
-Lalu pilih opsi pada metric dengan *aggregation = max* dan pilih field *field = system.uptime.duration*
+Lalu pilih opsi pada metric dengan *aggregation = max* dan pilih field *field = system.uptime.duration*.
+
 ![select-metric-visualization](/capture/create-max-system-uptime-duration.png)
 
 Setelah pengaturan selesai, simpan visualisasi tersebut.
+
 ![save-system-uptime-visualization](/capture/save-system-uptime-visualization.png)
