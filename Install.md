@@ -90,7 +90,7 @@ $ sudo apt-get install kibana
 Setelah kibana terpasang, selanjutnya edit beberapa konfigurasi dibawah ini:
 - **server.host** - Atur listen address ke ip address node pod06-elk agar kibana dapat diakses oleh node lain dalam satu jaringan LAN.
   ```sh
-  server.host: 10.10.6.10
+  server.host: "10.10.6.10"
   ```
 - **server.name** - Atur display name dari kibana.
   ```sh
