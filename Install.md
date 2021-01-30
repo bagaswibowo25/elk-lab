@@ -127,7 +127,7 @@ $ sudo nano /etc/metricbeat/metricbeat.yml
 Selanjutnya edit konfigurasi metricbeat dibawah ini:
 - **output.elasticsearch** - Atur output metricbeat ke elasticsearch dengan memanambahkan ip address pod06-elk.
   ```sh
-  host: ["10.10.6.10:9200]
+  host: ["10.10.6.10:9200"]
   ```
 Setelah selesai memasang metricbeat, aktifkan dan jalankan service metricbeat pada pod06-client.
 
