@@ -24,5 +24,9 @@ Setelah elasitcsearch berhasil terpasang, selanjutnya lakukan konfigurasi pada e
 $ sudo nano /etc/elasticsearch/elasticsearch.yml
 ```
 Selanjutnya edit beberapa konfigurasi dibawah ini:
-- **network.host** - Ubah
+- **network.host** - Atur listen address ke ip address node pod06-elk agar elasticsearch dapat diakses oleh node lain dalam satu jaringan LAN.
+  ```sh
+  network.host: 10.10.6.10
+  ```
+- **cluster.name** -
 ![Verifikasi](/capture/verifikasi-instalasi-elasticsearch.png)
