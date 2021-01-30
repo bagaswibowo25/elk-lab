@@ -135,3 +135,9 @@ Setelah selesai memasang metricbeat, aktifkan dan jalankan service metricbeat pa
 $ sudo systemctl enable metricbeat
 $ sudo systemctl start metricbeat
 ```
+Setelah service diaktifkan dan dijalankan lakukan verifikasi bahwa service telah berjalan dengan benar.
+
+```sh
+$ sudo systemctl status -l metricbeat
+```
+![Verifikasi](/capture/verifikasi-status-metricbeat.png)
