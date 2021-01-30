@@ -38,7 +38,7 @@ Setelah berhasil membuat index pattern selanjutnya membuat visualisasi dari data
 
 ### a. Membuat visualisasi Up Time
 
-Pertama-tama edit field **system.uptime.duration.ms** pada index pattern metricbeat. Tujuan diubahnya yaitu agar data tersebut dapat dibaca dengan mudah saat divisualisasikan. Pertama pergi ke **Stack Management > Index Pattern > metricbeat* > Search** lalu search **system.uptime.duration** lalu edit pada field tersebut.
+Pertama-tama edit field **system.uptime.duration.ms** pada index pattern metricbeat. Tujuan diubahnya yaitu agar data tersebut dapat dibaca dengan mudah saat divisualisasikan. Pertama pergi ke **Stack Management > Index Pattern > metricbeat > Search** lalu search **system.uptime.duration** lalu edit pada field tersebut.
 
 Ubah format pada field tersebut dari format field sebelumnya **Number** mejadi **Duration**.
 
