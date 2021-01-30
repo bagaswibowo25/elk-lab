@@ -18,4 +18,11 @@ Setelah repositori berhasil ditambahkan dilanjutkan dengan melakukan pemasangan 
 ```sh
 $ sudo apt-get install elasticsearch
 ```
+Setelah elasitcsearch berhasil terpasang, selanjutnya lakukan konfigurasi pada elasticsearch dengan melakukan modifikasi pada file /etc/elasticsearch/elasticsearch.yml.
+
+```sh
+$ sudo nano /etc/elasticsearch/elasticsearch.yml
+```
+Selanjutnya edit beberapa konfigurasi dibawah ini:
+- network.host - Ubah
 ![Verifikasi](/capture/verifikasi-instalasi-elasticsearch.png)
