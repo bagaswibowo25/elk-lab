@@ -28,7 +28,7 @@ Selanjutnya buat definisi untuk index pattern. Karena terdapat beberapa index da
 
 ![created-index-pattern](/capture/created-index-pattern-metricbeat.png)
 
-Setelah index pattern selesai dibuat. Cek semua data dengan membuka menu **Discovery** pada kibana.
+Setelah index pattern selesai dibuat. Cek semua data dengan membuka menu **Discover** pada kibana.
 
 ![discovery-menu-kibana](/capture/kibana-discover.png)
 
