@@ -49,6 +49,7 @@ Verifikasi service elasticsearch bahwa telah berjalan
 ```sh
 $ sudo systemctl status -l elasticsearch
 ```
+![Verifikasi](/capture/verifikasi-status-elasticsearch.png)
 
 Setelah elasticsearch running, verifikasi bahwa konfigurasi yang telah dilakukan telah sesuai dengan perintah berikut.
 
@@ -72,3 +73,8 @@ Setelah memasang logstash jalankan perintah berikut untuk mengaktifkan service l
 $ sudo systemctl enable logstash
 $ sudo systemctl start logstash
 ```
+Verifikasi instalasi service logstash
+```sh
+$ sudo systemctl status logstash
+```
+![Verifikasi](/capture/verifikasi-status-logstash.png)
