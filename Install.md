@@ -56,3 +56,19 @@ Setelah elasticsearch running, verifikasi bahwa konfigurasi yang telah dilakukan
 $ curl -X GET 'http://10.10.6.10:9200/?pretty'
 ```
 ![Verifikasi](/capture/verifikasi-instalasi-elasticsearch.png)
+
+## 2. Instalasi Logstash
+
+Setelah selesai memasang elasticsearch maka langkah selanjutnya adalah memasang logstash. Logstash digunakan untuk melakukan parsing data dari sumber dan diproses lalu dikirim ke elasticsearch.
+
+Pertama tama jalankan perintah berikut untuk memasang logstash
+
+```sh
+$ sudo apt-get install logstash
+```
+Setelah memasang logstash jalankan perintah berikut untuk mengaktifkan service logstash dan menjalankannya.
+
+```sh
+$ sudo systemctl enable logstash
+$ sudo systemctl start logstash
+```
