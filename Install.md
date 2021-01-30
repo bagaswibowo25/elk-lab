@@ -18,5 +18,5 @@ Setelah repositori berhasil ditambahkan dilanjutkan dengan melakukan pemasangan 
 ```sh
 $ sudo apt-get install elasticsearch
 ```
-![Verifikasi](/images/verifikasi-instalasi-elasticsearch.png)
+![Verifikasi](/capture/verifikasi-instalasi-elasticsearch.png)
 Format: ![Alt Text](url)
