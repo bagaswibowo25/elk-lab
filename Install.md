@@ -78,3 +78,22 @@ Verifikasi instalasi service logstash
 $ sudo systemctl status logstash
 ```
 ![Verifikasi](/capture/verifikasi-status-logstash.png)
+
+## 3. Instalasi Kibana
+
+Setelah selesai memasang logstash selanjutnya pasang kibana untuk melakukan visualisasi data.
+
+Pertama-tama jalankan perintah berikut untuk memasang kibana.
+```sh
+$ sudo apt-get install kibana
+```
+Setelah kibana berhasil dipasang, selanjutnya aktifkan dan jalankan service kibana.
+```sh
+$ sudo systemctl enable kibana
+$ sudo systemctl start kibana
+```
+Setelah kibana berjalan, lakukan verifikasi bahwa service kibana sudah aktif
+```sh
+$ sudo systemctl status -l kibana
+```
+![Verifikasi](/capture/verifikasi-status-kibana.png)
