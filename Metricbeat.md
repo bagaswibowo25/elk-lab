@@ -14,11 +14,11 @@ Setelah halaman kibana terbuka, selanjutnya buka pengaturan **Stack Management**
 
 ![stack-management](/capture/stack-management-kibana.PNG)
 
-Selanjutnya pilih menu Index Pattern > Create Index pattern.
+Selanjutnya pilih menu **Index Pattern > Create Index pattern**.
 
 ![kibana-index-pattern](/capture/kibana-index-pattern-menu.PNG)
 
-![create-index-pattern](/capture/create-index-pattern-menu.PNG)
+![create-index-pattern](/capture/create-index-pattern-menu.png)
 
 
 
