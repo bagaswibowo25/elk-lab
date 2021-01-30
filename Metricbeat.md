@@ -9,7 +9,9 @@ Buka halaman kibana pada browser di http://pod06-elk:5601.
 http://10.10.6.10:5601
 ```
 ![kibana-app](/capture/kibana-app-url.PNG)
+
 Setelah halaman kibana terbuka, selanjutnya buka pengaturan **Stack Management** pada menu kibana.
+
 ![stack-management](/capture/stack-management-kibana.PNG)
 
 
