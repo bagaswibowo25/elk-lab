@@ -43,3 +43,17 @@ Pertama-tama edit field **system.uptime.duration.ms** pada index pattern metricb
 Ubah format pada field tersebut dari format field sebelumnya **Number** mejadi **Duration**.
 
 ![edit-system-uptime](/capture/edit-system-uptime-metric.png)
+
+Setelah mengubah field **system.uptime.duration** selanjutnya pergi ke menu **Visualize**. Lalu buat visualisasi baru.
+
+![create-new-visualization](/capture/create-new-visualization.png)
+
+Setelah itu pilih tipe bentuk visualisasi. Untuk system uptime maka pilih bentuk **Metric** dan pilih sumber data dari **metricbeat**.
+![select-metric-visualization](/capture/select-metric-visualization.png)
+![select-metric-visualization](/capture/select-metric-source.png)
+
+Lalu pilih opsi pada metric dengan *aggregation = max* dan pilih field *field = system.uptime.duration*
+![select-metric-visualization](/capture/create-max-system-uptime-duration.png)
+
+Setelah pengaturan selesai, simpan visualisasi tersebut.
+![save-system-uptime-visualization](/capture/save-system-uptime-visualization.png)
