@@ -20,6 +20,8 @@ Selanjutnya pilih menu **Index Pattern > Create Index pattern**.
 
 ![create-index-pattern](/capture/create-index-pattern-menu.png)
 
+Selanjutnya buat definisi untuk index pattern. Karena terdapat beberapa index dari elasticsearch, maka gunakan asterisk untuk memilih seluruh index terkait dengan metricbeat.
 
+![define-index-pattern](/capture/define-index-pattern-menu.png)
 
 
