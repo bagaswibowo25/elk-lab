@@ -24,5 +24,5 @@ Setelah elasitcsearch berhasil terpasang, selanjutnya lakukan konfigurasi pada e
 $ sudo nano /etc/elasticsearch/elasticsearch.yml
 ```
 Selanjutnya edit beberapa konfigurasi dibawah ini:
-- network.host - Ubah
+- **network.host** - Ubah
 ![Verifikasi](/capture/verifikasi-instalasi-elasticsearch.png)
