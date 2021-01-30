@@ -24,4 +24,8 @@ Selanjutnya buat definisi untuk index pattern. Karena terdapat beberapa index da
 
 ![define-index-pattern](/capture/define-index-pattern.png)
 
+![select-time-field](/capture/select-time-field.PNG)
+
+![created-index-pattern](/capture/created-index-pattern-metricbeat.png)
+
 
