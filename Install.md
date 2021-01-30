@@ -10,7 +10,7 @@ Tambahkan repositori elasticsearch kedalam /etc/apt/source.list.d/elasticsearch-
 ```sh
 $ echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
 ```
-Selanjutnya lakukan update pada apt agar dapat menginstall elasticsearch.
+Selanjutnya lakukan update pada apt agar dapat memasang elasticsearch.
 ```sh
 $ sudo apt-get update
 ```
@@ -97,3 +97,41 @@ Setelah kibana berjalan, lakukan verifikasi bahwa service kibana sudah aktif
 $ sudo systemctl status -l kibana
 ```
 ![Verifikasi](/capture/verifikasi-status-kibana.png)
+
+# Eksekusi pada POD06-client
+ 
+## 1. Instalasi Metricbeat
+Pada pod06-client akan dijadikan sebagai node klien yang akan dilakukan monitoring terhadap resource yang dimilikinya. Seperti CPU, Memory, Disk, Network.
+
+Untuk memasang Metricbeat perlu menambahkan repositori dari elasticsearch.
+
+Impor elasticsearch public GPG key kedalam APT.
+```sh
+$ curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+```
+Tambahkan repositori elasticsearch kedalam /etc/apt/source.list.d/elasticsearch-7.x.list untuk dapat menginstall elasticsearch versi 7.
+```sh
+$ echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
+```
+Setelah repositori berhasil ditambahkan lakukan update dan dilanjutkan dengan pemasangan metricbeat.
+
+```sh
+$ sudo apt-get update && apt-get install metricbeat
+```
+
+Setelah metricbeat berhasil terpasang edit pengaturan pada metricbeat.
+
+```sh
+$ sudo nano /etc/metricbeat/metricbeat.yml
+```
+Selanjutnya edit konfigurasi metricbeat dibawah ini:
+- **output.elasticsearch** - Atur output metricbeat ke elasticsearch dengan memanambahkan ip address pod06-elk.
+  ```sh
+  host: ["10.10.6.10:9200]
+  ```
+Setelah selesai memasang metricbeat, aktifkan dan jalankan service metricbeat pada pod06-client.
+
+```sh
+$ sudo systemctl enable metricbeat
+$ sudo systemctl start metricbeat
+```
