@@ -159,11 +159,11 @@ Setelah selesai membuatnya, simpan visualisasi tersebut.
 
 ### g. Membuat Visualisasi CPU Usage
 
-Pertama-tama pergi ke halaman **Visualize** lalu bentuk yang dipilih adalah **TSVB** karena untuk melihat jumlah **bytes/s** dari metric **system.network.in.bytes**
+Pertama-tama pergi ke halaman **Visualize** lalu bentuk yang dipilih adalah **TSVB** karena untuk melihat jumlah penggunaan resource cpu dalam tamapilan gauge dengan persentase.
 
 ![select-tsvc-visual](capture/select-tsvb-visualization.png)
 
-Atur semua pengaturan data seperti pada gambar dibawah ini. Untuk menampilkan metric secara realtime
+Atur semua pengaturan data seperti pada gambar dibawah ini. Untuk menampilkan persentasi metric penggunaan cpu secara realtime.
 
 ![create-outbound-traffic](capture/create-cpu-usage.png)
 
@@ -171,4 +171,24 @@ Pada bagian *metric options* ubah format data default menjadi persen untuk menam
 
 ![edit-cpu-usage-option](capture/create-cpu-usage-options.png)
 
-Setelah selesai membuatnya, simpan visualisasi tersebut
+Setelah selesai membuatnya, simpan visualisasi tersebut.
+
+### h. Membuat Visualisasi Memory Usage
+
+Pertama-tama pergi ke halaman **Visualize** lalu bentuk yang dipilih adalah **TSVB** karena untuk melihat gauge dari penggunaan memory.
+
+![select-tsvc-visual](capture/select-tsvb-visualization.png)
+
+Atur semua pengaturan data seperti pada gambar dibawah ini. Untuk menampilkan metric penggunaan memory secara realtime.
+
+![create-memory-usage-gauge](capture/create-memory-usage-gauge.png)
+
+Pada bagian **Panel Options** ubah style yang diinginkan untuk menampilkan visualisasi **Memory Usage**.
+
+![](capture/memory-usage-gauge-style.png)
+
+Tujuan dari style adalah mengatur warna dari gauge ketika sudah mencapai titik tertentu.
+
+Pada bagian *metric options* ubah format data default menjadi persen untuk menampilkan persentase dari metric.
+
+Setelah selesai membuatnya, simpan visualisasi tersebut.
