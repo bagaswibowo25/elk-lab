@@ -117,7 +117,7 @@ Jika sudah selesai simpan visualisasi tersebut.
 
 ![simpan-total-memory](capture/save-system-filesystem-total-visualization.png)
 
-### Membuat Visualisasi Outbound Traffic Network
+### e. Membuat Visualisasi Outbound Traffic Network
 
 Pertama-tama pergi ke halaman **Visualize** lalu bentuk yang dipilih adalah **TSVB** karena untuk melihat jumlah **bytes/s** dari metric **system.network.out.bytes**
 
@@ -126,3 +126,49 @@ Pertama-tama pergi ke halaman **Visualize** lalu bentuk yang dipilih adalah **TS
 Atur semua pengaturan data seperti pada gambar dibawah ini. Untuk menampilkan metric secara realtime
 
 ![create-outbound-traffic](capture/create-traffic-outbound.png)
+
+Pada bagian *metric options* ubah format data default menjadi bytes.
+
+![edit-metric-optios-outbound-traffic](capture/create-traffic-outbound-options.png)
+
+Untuk menampilkan total bytes yang telah dikeluarkan tambahkan metric baru lagi dalam data tersebut.
+
+![total-outbound-traffic](/capture/create-traffic-outbound-total-transfered.png)
+
+Setelah selesai membuatnya, simpan visualisasi tersebut.
+
+### f. Membuat Visualisasi Inbound Traffic Network
+
+Pertama-tama pergi ke halaman **Visualize** lalu bentuk yang dipilih adalah **TSVB** karena untuk melihat jumlah **bytes/s** dari metric **system.network.in.bytes**
+
+![select-tsvc-visual](capture/select-tsvb-visualization.png)
+
+Atur semua pengaturan data seperti pada gambar dibawah ini. Untuk menampilkan metric secara realtime
+
+![create-outbound-traffic](capture/create-traffic-inbound.png)
+
+Pada bagian *metric options* ubah format data default menjadi bytes.
+
+![edit-metric-optios-outbound-traffic](capture/create-traffic-inbound-options.png)
+
+Untuk menampilkan total bytes yang telah dikeluarkan tambahkan metric baru lagi dalam data tersebut.
+
+![total-outbound-traffic](/capture/create-traffic-inbound-total-transfered.png)
+
+Setelah selesai membuatnya, simpan visualisasi tersebut.
+
+### g. Membuat Visualisasi CPU Usage
+
+Pertama-tama pergi ke halaman **Visualize** lalu bentuk yang dipilih adalah **TSVB** karena untuk melihat jumlah **bytes/s** dari metric **system.network.in.bytes**
+
+![select-tsvc-visual](capture/select-tsvb-visualization.png)
+
+Atur semua pengaturan data seperti pada gambar dibawah ini. Untuk menampilkan metric secara realtime
+
+![create-outbound-traffic](capture/create-cpu-usage.png)
+
+Pada bagian *metric options* ubah format data default menjadi persen untuk menampilkan persentase dari metric.
+
+![edit-cpu-usage-option](capture/create-cpu-usage-options.png)
+
+Setelah selesai membuatnya, simpan visualisasi tersebut
