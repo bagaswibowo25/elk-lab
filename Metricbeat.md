@@ -192,3 +192,35 @@ Tujuan dari style adalah mengatur warna dari gauge ketika sudah mencapai titik t
 Pada bagian *metric options* ubah format data default menjadi persen untuk menampilkan persentase dari metric.
 
 Setelah selesai membuatnya, simpan visualisasi tersebut.
+
+### i. Membuat Visualisasi System Load
+
+Pertama-tama pergi ke halaman **Visualize** lalu bentuk yang dipilih adalah **TSVB** karena untuk melihat gauge dari penggunaan memory.
+
+![select-tsvc-visual](capture/select-tsvb-visualization.png)
+
+Atur semua pengaturan data seperti pada gambar dibawah ini. Untuk menampilkan metric system load selama 5 menit. Pilih metric yang akan digunakan, yaitu **system.load.5** untuk menampilkan jumlah load dalam 5 menit.
+
+![create-system-load](/capture/create-system-load-5min.png)
+
+Pada bagian *metric options* ubah format data default menjadi persen untuk menampilkan persentase dari metric.
+
+Setelah selesai membuatnya, simpan visualisasi tersebut.
+
+### j. Membuat Visualisasi Disk Used
+
+Pertama-tama pergi ke halaman **Visualize** lalu bentuk yang dipilih adalah **TSVB** karena untuk melihat gauge dari penggunaan memory.
+
+![select-tsvc-visual](capture/select-tsvb-visualization.png)
+
+Atur semua pengaturan data seperti pada gambar dibawah ini. Untuk menampilkan metric system load selama 5 menit. Untuk menampilkan penggunaan ini maka perlu ada tambahan expression pada metric yaitu dengan membagi metric **system.fsstat.total_size.used** dengan **system.fsstat.total_size.total** untuk mendapatkan hasil persentasi penggunaan disk.
+
+![create-disk-used](/capture/create-disk-used.png)
+
+Pada bagian *metric options* ubah format data default menjadi persen untuk menampilkan persentase dari metric.
+
+Lalu pada bagian **Panel Options** ubah style yang diinginkan untuk menampilkan visualisasi **Disk Used**.
+
+![option-disk-used](/capture/create-disk-used-option.png)
+
+Setelah selesai membuatnya, simpan visualisasi tersebut.
