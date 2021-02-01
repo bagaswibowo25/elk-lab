@@ -254,4 +254,7 @@ Pertama-tama pergi ke halaman **Visualize** lalu bentuk yang dipilih adalah **TS
 
 ![create-memory-usage-time-series](capture/create-memory-usage-time-series.PNG)
 
-Jika semua metric sudah disesuaikan simpan konfigurasi visualisasi tersebut.
+Jika semua metric sudah disesuaikan simpan konfigurasi visualisasi tersebut.</br></br>
+
+
+[< Langkah Sebelumya](https://github.com/bagaswibowo25/elk-lab/blob/master/Install.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Langkah Selanjutnya >](https://github.com/bagaswibowo25/elk-lab/blob/master/RawData.md)

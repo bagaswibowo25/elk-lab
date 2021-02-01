@@ -154,4 +154,6 @@ Setelah service diaktifkan dan dijalankan lakukan verifikasi bahwa service telah
 ```sh
 $ sudo systemctl status -l metricbeat
 ```
-![Verifikasi](capture/verifikasi-status-metricbeat.png)
+![Verifikasi](capture/verifikasi-status-metricbeat.png)</br></br>
+
+[< Halaman Utama](https://github.com/bagaswibowo25/elk-lab/blob/master/README.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Langkah Selanjutnya >](https://github.com/bagaswibowo25/elk-lab/blob/master/Metricbeat.md)

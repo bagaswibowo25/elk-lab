@@ -251,3 +251,5 @@ Setelah itu pilih tipe chart yang akan digunakan, yaitu **Data Table** . Lakukan
 ![create-datatable-raw](capture/create-datatable-raw-data.png)
 
 Setelah selesai membuat visualisasi diatas kemudian simpan visualisasi tersebut.
+
+[< Langkah Sebelumya](https://github.com/bagaswibowo25/elk-lab/blob/master/Metricbeat.md) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Langkah Selanjutnya >](https://github.com/bagaswibowo25/elk-lab/blob/master/Dashboard.md)
