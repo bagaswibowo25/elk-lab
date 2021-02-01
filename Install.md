@@ -49,14 +49,14 @@ Verifikasi service elasticsearch bahwa telah berjalan
 ```sh
 $ sudo systemctl status -l elasticsearch
 ```
-![Verifikasi](/capture/verifikasi-status-elasticsearch.png)
+![Verifikasi](capture/verifikasi-status-elasticsearch.png)
 
 Setelah elasticsearch running, verifikasi bahwa konfigurasi yang telah dilakukan telah sesuai dengan perintah berikut.
 
 ```sh
 $ curl -X GET 'http://10.10.6.10:9200/?pretty'
 ```
-![Verifikasi](/capture/verifikasi-instalasi-elasticsearch.png)
+![Verifikasi](capture/verifikasi-instalasi-elasticsearch.png)
 
 ## 2. Instalasi Logstash
 
@@ -77,7 +77,7 @@ Verifikasi instalasi service logstash
 ```sh
 $ sudo systemctl status logstash
 ```
-![Verifikasi](/capture/verifikasi-status-logstash.png)
+![Verifikasi](capture/verifikasi-status-logstash.png)
 
 ## 3. Instalasi Kibana
 
@@ -110,7 +110,7 @@ Setelah kibana berjalan, lakukan verifikasi bahwa service kibana sudah aktif
 ```sh
 $ sudo systemctl status -l kibana
 ```
-![Verifikasi](/capture/verifikasi-status-kibana.png)
+![Verifikasi](capture/verifikasi-status-kibana.png)
 
 # Eksekusi pada POD06-client
  
@@ -154,4 +154,4 @@ Setelah service diaktifkan dan dijalankan lakukan verifikasi bahwa service telah
 ```sh
 $ sudo systemctl status -l metricbeat
 ```
-![Verifikasi](/capture/verifikasi-status-metricbeat.png)
+![Verifikasi](capture/verifikasi-status-metricbeat.png)
