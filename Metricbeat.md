@@ -31,11 +31,11 @@ Setelah index pattern selesai dibuat. Cek semua data dengan membuka menu **Disco
 
 ![discovery-menu-kibana](capture/kibana-discover.png)
 
-## 2. Membuat visualisasi
+## 2. Membuat Visualisasi
 
 Setelah berhasil membuat index pattern selanjutnya membuat visualisasi dari data-data tersebut. Untuk membuat visualisai pergi ke menu **Visualize** pada kibana.
 
-### a. Membuat visualisasi Up Time
+### a. Membuat Visualisasi Up Time
 
 Pertama-tama edit field **system.uptime.duration.ms** pada index pattern metricbeat. Tujuan diubahnya yaitu agar data tersebut dapat dibaca dengan mudah saat divisualisasikan. Pertama pergi ke **Stack Management > Index Pattern > metricbeat > Search** lalu search **system.uptime.duration** lalu edit pada field tersebut.
 
